@@ -1,0 +1,53 @@
+<style>
+  /* Default height for small devices */
+  #intro-example {
+    height: 90vh;
+  }
+</style>
+
+<app-nav-bar></app-nav-bar>
+
+<link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+<div
+    id="intro-example"
+    class="p-5 text-center bg-image"
+    style="background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg');"
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);" >
+
+
+
+
+          <h6 class="text-title" style="background-color: rgb(236, 199, 228); width: 150px; height: 80px">Végösszeg: {{vegosszeg}} Ft<br> <br><button class="btn-sm"  (click)="vasarlas()">Megrendelés</button> </h6>
+
+
+
+
+
+
+
+
+      <div class="row row-cols-1 row-cols-md-5 g-4" style="padding: 5vh 10vw 5vw">
+        <div class="col" *ngFor = "let termek of kosar">
+
+          <div class="card h-100" style="width: 12vw;">
+            <div class="card-header" style="font-family:Georgia, 'Times New Roman', Times, serif;  background-color: rgb(236, 199, 228)">{{termek.leiras}}</div>
+            <div class="card-body">
+              <img [src]="termek.kepurl" style="width: 100%;">
+              <p class="card-text" style="font-family:Georgia, 'Times New Roman', Times, serif">{{termek.db}} db <br> {{termek.ar}} <br> </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+

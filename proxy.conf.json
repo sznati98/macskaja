@@ -1,0 +1,11 @@
+{
+  "/server": {
+    "target": "https://prfgyak.herokuapp.com/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^server": ""
+    }
+
+  }
+}

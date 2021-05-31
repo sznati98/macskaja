@@ -1,0 +1,83 @@
+<div class="content" role="main">
+  <!-- <h2>Login</h2>
+
+ <div class="form-outline">
+   <input type="username" id="typeUsername" class="form-control" />
+   <label class="form-label" for="typeUsername">Felhasználónév megadása</label>
+ </div>
+ <div class="input-group input-group-sm mb-3">
+
+<span class="input-group-text" id="inputGroup-sizing-sm">Felhasználónév megadása</span>
+<input type="text" class="form-control" aria-label="Sizing example input"
+  aria-describedby="inputGroup-sizing-sm" />
+</div>
+
+<div class="form-outline">
+  <input type="password" id="typePassword" class="form-control" />
+  <label class="form-label" for="typePassword">Jelszó megadása</label>
+</div> -->
+<style>
+  /* Default height for small devices */
+  #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+</style>
+ <!-- Navbar -->
+ <app-nav-bar></app-nav-bar>
+
+<div
+id="intro-example"
+class="p-5 text-center bg-image"
+style="background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg');"
+>
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white">
+
+      <div class="row">
+        <div class="col-md-5" style="width: 200px"></div>
+        <div class="col-md-5">
+          <div class="card">
+            <img
+              src="data:image/png;base64,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"
+              class="card-img-top"
+              alt="..."
+              class="img-fluid rounded"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif">Bejelentkezés</h5>
+              <div class="form-outline" style="background-color: white;">
+                <input type="email" id="email" [(ngModel)]="email" class="form-control" />
+                <label class="form-label" for="typePassword" style="font-family:Georgia, 'Times New Roman', Times, serif">E-mail</label>
+              </div>
+
+                <div class="form-outline" style="background-color: white;">
+                  <input type="password" id="password" [(ngModel)]="password" class="form-control" />
+                  <label class="form-label" for="typePassword" style="font-family:Georgia, 'Times New Roman', Times, serif">Jelszó</label>
+                </div>
+
+
+                <button type="button" class="btn btn-light btn-sm" data-mdb-ripple-color="dark" style="font-family:Georgia, 'Times New Roman', Times, serif" (click)="login()">Bejelentkezek</button>
+
+
+              <button type="button" class="btn btn-light btn-sm" data-mdb-ripple-color="dark" [routerLink]="['/registration']" style="font-family:Georgia, 'Times New Roman', Times, serif">Még nem regisztráltam</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Navbar -->
+</div>

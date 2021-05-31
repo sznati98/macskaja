@@ -1,0 +1,80 @@
+<div class="content" role="main">
+  <!-- <h2>Login</h2>
+
+ <div class="form-outline">
+   <input type="username" id="typeUsername" class="form-control" />
+   <label class="form-label" for="typeUsername">Felhasználónév megadása</label>
+ </div>
+ <div class="input-group input-group-sm mb-3">
+
+<span class="input-group-text" id="inputGroup-sizing-sm">Felhasználónév megadása</span>
+<input type="text" class="form-control" aria-label="Sizing example input"
+  aria-describedby="inputGroup-sizing-sm" />
+</div>
+
+<div class="form-outline">
+  <input type="password" id="typePassword" class="form-control" />
+  <label class="form-label" for="typePassword">Jelszó megadása</label>
+</div> -->
+<style>
+  /* Default height for small devices */
+  #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+</style>
+ <!-- Navbar -->
+ <app-nav-bar></app-nav-bar>
+<div
+id="intro-example"
+class="p-5 text-center bg-image"
+style="background-image: url('https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg');"
+>
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="text-white">
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="card" style="width: 200px">
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/animals-177/512/Cat-512.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="font-family:Georgia, 'Times New Roman', Times, serif">Regisztráció</h5>
+              <div class="form-outline" style="background-color: white;">
+                <input type="email" id="email" [(ngModel)]="email" class="form-control" />
+                <label class="form-label" for="typeEmail" style="font-family:Georgia, 'Times New Roman', Times, serif">E-mail</label>
+              </div>
+
+                <div class="form-outline" style="background-color: white;">
+                  <input type="password" id="password" [(ngModel)]="password" class="form-control" />
+                  <label class="form-label" for="typePassword" style="font-family:Georgia, 'Times New Roman', Times, serif">Jelszó</label>
+                </div>
+
+
+                <button type="button" class="btn btn-light" data-mdb-ripple-color="dark" style="font-family:Georgia, 'Times New Roman', Times, serif" (click)="saveData(email,password)" [routerLink]="['/login']">Regisztrálok</button>
+                <button type="button" class="btn btn-light" data-mdb-ripple-color="dark" style="font-family:Georgia, 'Times New Roman', Times, serif" [routerLink]="['/login']">Már van fiókom</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
